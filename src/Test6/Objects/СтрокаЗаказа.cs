@@ -30,20 +30,18 @@ namespace IIS.Test6
     [Caption("Строка заказа")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СтрокаЗаказаE", new string[] {
-            "Сумма as \'Сумма\'",
-            "Название as \'Название\'",
             "Товар as \'Товар\'",
-            "Товар.Название as \'Название\'"}, Hidden=new string[] {
+            "Товар.Название as \'Название\'",
+            "Количество",
+            "Сумма"}, Hidden=new string[] {
             "Товар.Название"})]
     [MasterViewDefineAttribute("СтрокаЗаказаE", "Товар", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
     public class СтрокаЗаказа : ICSSoft.STORMNET.DataObject
     {
         
-        private int fво;
+        private int fКоличество;
         
         private double fСумма;
-        
-        private string fНазвание;
         
         private IIS.Test6.Товар fТовар;
         
@@ -55,65 +53,33 @@ namespace IIS.Test6
 
         
         /// <summary>
-        /// во.
+        /// Количество.
         /// </summary>
-        // *** Start programmer edit section *** (СтрокаЗаказа.во CustomAttributes)
+        // *** Start programmer edit section *** (СтрокаЗаказа.Количество CustomAttributes)
 
-        // *** End programmer edit section *** (СтрокаЗаказа.во CustomAttributes)
-        private int во
+        // *** End programmer edit section *** (СтрокаЗаказа.Количество CustomAttributes)
+        public virtual int Количество
         {
             get
             {
-                // *** Start programmer edit section *** (СтрокаЗаказа.во Get start)
+                // *** Start programmer edit section *** (СтрокаЗаказа.Количество Get start)
 
-                // *** End programmer edit section *** (СтрокаЗаказа.во Get start)
-                int result = this.fво;
-                // *** Start programmer edit section *** (СтрокаЗаказа.во Get end)
+                // *** End programmer edit section *** (СтрокаЗаказа.Количество Get start)
+                int result = this.fКоличество;
+                // *** Start programmer edit section *** (СтрокаЗаказа.Количество Get end)
 
-                // *** End programmer edit section *** (СтрокаЗаказа.во Get end)
+                // *** End programmer edit section *** (СтрокаЗаказа.Количество Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (СтрокаЗаказа.во Set start)
+                // *** Start programmer edit section *** (СтрокаЗаказа.Количество Set start)
 
-                // *** End programmer edit section *** (СтрокаЗаказа.во Set start)
-                this.fво = value;
-                // *** Start programmer edit section *** (СтрокаЗаказа.во Set end)
+                // *** End programmer edit section *** (СтрокаЗаказа.Количество Set start)
+                this.fКоличество = value;
+                // *** Start programmer edit section *** (СтрокаЗаказа.Количество Set end)
 
-                // *** End programmer edit section *** (СтрокаЗаказа.во Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Название.
-        /// </summary>
-        // *** Start programmer edit section *** (СтрокаЗаказа.Название CustomAttributes)
-
-        // *** End programmer edit section *** (СтрокаЗаказа.Название CustomAttributes)
-        [StrLen(255)]
-        public virtual string Название
-        {
-            get
-            {
-                // *** Start programmer edit section *** (СтрокаЗаказа.Название Get start)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Название Get start)
-                string result = this.fНазвание;
-                // *** Start programmer edit section *** (СтрокаЗаказа.Название Get end)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Название Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (СтрокаЗаказа.Название Set start)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Название Set start)
-                this.fНазвание = value;
-                // *** Start programmer edit section *** (СтрокаЗаказа.Название Set end)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Название Set end)
+                // *** End programmer edit section *** (СтрокаЗаказа.Количество Set end)
             }
         }
         

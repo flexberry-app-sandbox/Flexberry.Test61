@@ -90,6 +90,26 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
+        главная: {
+          caption: 'Главная',
+          title: 'Главная',
+          'i-i-s-test6-заказ-l': {
+            caption: 'Заказ',
+            title: ''
+          },
+          'i-i-s-test6-сотрудник-l': {
+            caption: 'Сотрудник',
+            title: ''
+          },
+          'i-i-s-test6-товар-l': {
+            caption: 'Товар',
+            title: ''
+          },
+          'i-i-s-test6-клиент-l': {
+            caption: 'Клиент',
+            title: ''
+          }
+        },
         test6: {
           caption: 'Test6',
           title: 'Test6',

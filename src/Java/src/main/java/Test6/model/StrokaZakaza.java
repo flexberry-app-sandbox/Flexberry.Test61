@@ -22,14 +22,11 @@ public class StrokaZakaza {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "во")
-    private Integer во;
+    @Column(name = "Количество")
+    private Integer количество;
 
     @Column(name = "Сумма")
     private Double сумма;
-
-    @Column(name = "Название")
-    private String название;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Tovar")
@@ -64,12 +61,12 @@ public class StrokaZakaza {
         return primarykey;
     }
 
-    public Integer getво() {
-      return во;
+    public Integer getКоличество() {
+      return количество;
     }
 
-    public void setво(Integer во) {
-      this.во = во;
+    public void setКоличество(Integer количество) {
+      this.количество = количество;
     }
 
     public Double getСумма() {
@@ -78,14 +75,6 @@ public class StrokaZakaza {
 
     public void setСумма(Double сумма) {
       this.сумма = сумма;
-    }
-
-    public String getНазвание() {
-      return название;
-    }
-
-    public void setНазвание(String название) {
-      this.название = название;
     }
 
 

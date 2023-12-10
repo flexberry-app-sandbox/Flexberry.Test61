@@ -5,7 +5,7 @@
 
 CREATE TABLE СтрокаЗаказа (
  primaryKey UUID NOT NULL,
- Название VARCHAR(255) NULL,
+ Количество INT NULL,
  Сумма DOUBLE PRECISION NULL,
  Товар UUID NOT NULL,
  Заказ UUID NOT NULL,

@@ -7,18 +7,9 @@
   "parentClassName": null,
   "attrs": [
     {
-      "name": "во",
+      "name": "количество",
       "type": "number",
       "flexberryType": "int",
-      "notNull": false,
-      "defaultValue": "",
-      "stored": true,
-      "ordered": false
-    },
-    {
-      "name": "название",
-      "type": "string",
-      "flexberryType": "string",
       "notNull": false,
       "defaultValue": "",
       "stored": true,
@@ -57,16 +48,16 @@
       "modelName": "i-i-s-test6-строка-заказа",
       "attrs": [
         {
-          "name": "сумма",
-          "caption": "Сумма",
+          "name": "количество",
+          "caption": "",
           "hidden": false,
-          "index": 0
+          "index": 2
         },
         {
-          "name": "название",
-          "caption": "Название",
+          "name": "сумма",
+          "caption": "",
           "hidden": false,
-          "index": 1
+          "index": 3
         }
       ],
       "belongsTo": [
@@ -81,10 +72,10 @@
               "name": "название",
               "caption": "Название",
               "hidden": true,
-              "index": 3
+              "index": 1
             }
           ],
-          "index": 2,
+          "index": 0,
           "type": "standard",
           "caption": "Товар",
           "name": "товар",

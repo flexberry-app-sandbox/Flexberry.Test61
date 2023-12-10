@@ -69,11 +69,11 @@ export let defineProjections = function (modelClass) {
       фамилия: attr('Фамилия', { index: 6, hidden: true })
     }, { index: 5, displayMemberPath: 'фамилия' }),
     строкаЗаказа: hasMany('i-i-s-test6-строка-заказа', 'Строка заказа', {
-      сумма: attr('Сумма', { index: 0 }),
-      название: attr('Название', { index: 1 }),
       товар: belongsTo('i-i-s-test6-товар', 'Товар', {
-        название: attr('Название', { index: 3, hidden: true })
-      }, { index: 2, displayMemberPath: 'название' })
+        название: attr('Название', { index: 1, hidden: true })
+      }, { index: 0, displayMemberPath: 'название' }),
+      количество: attr('', { index: 2 }),
+      сумма: attr('', { index: 3 })
     })
   });
 

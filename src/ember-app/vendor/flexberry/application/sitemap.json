@@ -4,9 +4,9 @@
   "items": [
     {
       "link": null,
-      "menuName": "test6",
-      "caption": "Test6",
-      "title": "Test6",
+      "menuName": "главная",
+      "caption": "Главная",
+      "title": "Главная",
       "children": [
         {
           "link": "i-i-s-test6-заказ-l",
