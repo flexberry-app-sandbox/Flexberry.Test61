@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Test6",
+  "applicationTitle": "Test6",
+  "items": [
+    {
+      "link": null,
+      "menuName": "test6",
+      "caption": "Test6",
+      "title": "Test6",
+      "children": [
+        {
+          "link": "i-i-s-test6-заказ-l",
+          "menuName": null,
+          "caption": "Заказ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test6-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test6-товар-l",
+          "menuName": null,
+          "caption": "Товар",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test6-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

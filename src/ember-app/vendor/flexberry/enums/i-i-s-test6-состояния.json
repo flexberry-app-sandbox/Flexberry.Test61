@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Test6",
+  "className": "Состояния",
+  "enumObjects": {
+    "НаСборке": "",
+    "Готов": ""
+  }
+}
